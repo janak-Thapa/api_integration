@@ -1,14 +1,12 @@
-// src/components/UserList.tsx
+
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
-// Define the interface for a user
 interface User {
     id: number;
     name: string;
 }
 
-// Define the state types
 interface UserListState {
     users: User[];
     error: string | null;
